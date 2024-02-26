@@ -1,4 +1,4 @@
-﻿int getNewFirstArraySize(string[] arr)
+﻿int GetNewFirstArraySize(string[] arr)
 {
     int newIndex = 0;
     foreach (string s in arr)
@@ -11,7 +11,7 @@
     return newIndex;
 }
 
-string[] createNewArray(int newIndex, string[] arr)
+string[] CreateNewArray(int newIndex, string[] arr)
 {
     string[] newFirstArray = new string[newIndex];
     newIndex = 0;
@@ -30,3 +30,9 @@ void ArrayInConsole (string[] arr)
 {
     ArrayInConsole.Write($"[{string.Join(", ", arr)}]");
 }
+
+string[] firstArray = {“Hello”, “2”, “world”, “:-)”};
+string[] newFirstArray = CreateNewArray(GetNewFirstArraySize(firstArray), firstArray);
+ArrayInConsole(firstArray);
+Console.Write("->");
+ArrayInConsole(newFirstArray);
