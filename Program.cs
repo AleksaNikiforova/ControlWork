@@ -25,3 +25,8 @@ string[] createNewArray(int newIndex, string[] arr)
     }
     return newFirstArray;
 }
+
+void ArrayInConsole (string[] arr)
+{
+    ArrayInConsole.Write($"[{string.Join(", ", arr)}]");
+}
