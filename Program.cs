@@ -28,10 +28,10 @@ string[] CreateNewArray(int newIndex, string[] arr)
 
 void ArrayInConsole (string[] arr)
 {
-    ArrayInConsole.Write($"[{string.Join(", ", arr)}]");
+    Console.Write($"[{string.Join(", ", arr)}]");
 }
 
-string[] firstArray = {“Hello”, “2”, “world”, “:-)”};
+string[] firstArray = {"Hello", "2", "world", ":-)"};
 string[] newFirstArray = CreateNewArray(GetNewFirstArraySize(firstArray), firstArray);
 ArrayInConsole(firstArray);
 Console.Write("->");
